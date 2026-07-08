@@ -3,8 +3,14 @@
   "author": "Ky Decker <hi@ky.fyi> (https://ky.fyi/)",
   "type": "module",
   "version": "0.0.1",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "11.10.0",
+      "onFail": "download"
+    }
+  },
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro check && astro build",
