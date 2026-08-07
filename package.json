@@ -6,11 +6,12 @@
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
-      "version": "11.10.0",
+      "version": "11.20.0",
       "onFail": "download"
     }
   },
   "scripts": {
+    "prepare": "simple-git-hooks",
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro check && astro build",
@@ -23,21 +24,23 @@
     "pre-commit": "./node_modules/.bin/nano-staged"
   },
   "nano-staged": {
-    "*.{js,mjs,cjs,jsx,ts,mts,cts,tsx,json,jsonc,css,astro}": [
-      "biome check --write"
-    ]
+    "*.{astro,cjs,css,js,json,jsonc,jsx,mjs,ts,tsx}": [
+      "biome check --write --no-errors-on-unmatched"
+    ],
+    "*.{png,jpg,jpeg,webp,avif,heic,gif,svg}": "pnpm dlx optimo",
+    "*.{mp4,webm,mov}": "pnpm dlx optimo"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.10",
     "@astrojs/sitemap": "^3.7.3",
     "astro": "^7.1.6",
-    "nano-staged": "^1.0.2",
-    "simple-git-hooks": "^2.13.1",
     "smartypants": "^0.2.2",
     "typescript": "^6.0.3"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.5.6",
-    "sharp": "^0.35.3"
+    "nano-staged": "^1.0.2",
+    "sharp": "^0.35.3",
+    "simple-git-hooks": "^2.13.1"
   }
 }

@@ -37,6 +37,7 @@ An Astro starter project set up with pnpm, Biome, `simple-git-hooks`, and Astro 
 
 **Pre-commit checks with `simple-git-hooks` and `nano-staged`**
 - `biome check --write` on pre-commit
+- [`optimo`](https://optimo.microlink.io) to format and compress image and video files
 
 **Dependabot**
 - Weekly dependency update checks
