@@ -38,9 +38,9 @@
     "typescript": "^6.0.3"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.5.14",
+    "@biomejs/biome": "^2.5.15",
     "nano-staged": "^1.0.2",
-    "sharp": "^0.35.4",
+    "sharp": "^0.35.5",
     "simple-git-hooks": "^2.14.0"
   }
 }
