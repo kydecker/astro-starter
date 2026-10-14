@@ -3,6 +3,9 @@
   "author": "Ky Decker <hi@ky.fyi> (https://ky.fyi/)",
   "type": "module",
   "version": "0.0.1",
+  "imports": {
+    "#/*": "./src/*"
+  },
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
