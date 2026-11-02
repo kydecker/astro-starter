@@ -36,12 +36,12 @@
   "dependencies": {
     "@astrojs/check": "^0.9.12",
     "@astrojs/sitemap": "^3.7.4",
-    "astro": "^7.4.2",
+    "astro": "^7.4.4",
     "smartypants": "^0.2.2",
     "typescript": "^6.0.3"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.6.2",
+    "@biomejs/biome": "^2.6.4",
     "nano-staged": "^1.0.2",
     "sharp": "^0.35.5",
     "simple-git-hooks": "^2.14.0"
